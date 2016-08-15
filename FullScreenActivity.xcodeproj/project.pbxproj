@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		E4A6D3251D61973600EA5E69 /* FullScreenActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = E4A6D3241D61973600EA5E69 /* FullScreenActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4A6D32F1D61976B00EA5E69 /* FullScreenActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6D32C1D61976B00EA5E69 /* FullScreenActivity.swift */; };
+		E4A6D3301D61976B00EA5E69 /* FullScreenActivity.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A6D32D1D61976B00EA5E69 /* FullScreenActivity.xib */; };
+		E4A6D3311D61976B00EA5E69 /* UIView+FullScreenActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6D32E1D61976B00EA5E69 /* UIView+FullScreenActivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4A6D3211D61973600EA5E69 /* FullScreenActivity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FullScreenActivity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4A6D3241D61973600EA5E69 /* FullScreenActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullScreenActivity.h; sourceTree = "<group>"; };
 		E4A6D3261D61973600EA5E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4A6D32C1D61976B00EA5E69 /* FullScreenActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenActivity.swift; sourceTree = "<group>"; };
+		E4A6D32D1D61976B00EA5E69 /* FullScreenActivity.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FullScreenActivity.xib; sourceTree = "<group>"; };
+		E4A6D32E1D61976B00EA5E69 /* UIView+FullScreenActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FullScreenActivity.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +52,9 @@
 		E4A6D3231D61973600EA5E69 /* FullScreenActivity */ = {
 			isa = PBXGroup;
 			children = (
+				E4A6D32C1D61976B00EA5E69 /* FullScreenActivity.swift */,
+				E4A6D32D1D61976B00EA5E69 /* FullScreenActivity.xib */,
+				E4A6D32E1D61976B00EA5E69 /* UIView+FullScreenActivity.swift */,
 				E4A6D3241D61973600EA5E69 /* FullScreenActivity.h */,
 				E4A6D3261D61973600EA5E69 /* Info.plist */,
 			);
@@ -120,6 +129,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A6D3301D61976B00EA5E69 /* FullScreenActivity.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A6D3311D61976B00EA5E69 /* UIView+FullScreenActivity.swift in Sources */,
+				E4A6D32F1D61976B00EA5E69 /* FullScreenActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +242,7 @@
 		E4A6D32A1D61973600EA5E69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +253,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.damon.FullScreenActivity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E4A6D32B1D61973600EA5E69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

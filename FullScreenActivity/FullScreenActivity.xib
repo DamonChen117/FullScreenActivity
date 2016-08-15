@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FullScreenActivity" customModule="AdClear_Lite" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6F5-LE-eAR">
+                    <rect key="frame" x="240" y="240" width="120" height="120"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vtY-YP-UAh">
+                            <rect key="frame" x="41" y="42" width="37" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="h1I-7d-2Xq"/>
+                                <constraint firstAttribute="width" constant="37" id="hDF-oT-zHQ"/>
+                            </constraints>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znv-VL-PnQ">
+                            <rect key="frame" x="8" y="91" width="104" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="04I-li-hZN"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="104" id="JNA-h8-PXJ"/>
+                                <constraint firstAttribute="height" constant="21" id="iRW-XT-f8K"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="6o3-aQ-5kE"/>
+                        <constraint firstItem="znv-VL-PnQ" firstAttribute="leading" secondItem="6F5-LE-eAR" secondAttribute="leading" constant="8" id="IE3-ep-sAi"/>
+                        <constraint firstAttribute="trailing" secondItem="znv-VL-PnQ" secondAttribute="trailing" constant="8" id="Us4-7Q-UkY"/>
+                        <constraint firstItem="znv-VL-PnQ" firstAttribute="top" secondItem="vtY-YP-UAh" secondAttribute="bottom" constant="12" id="bbp-jm-Vmp"/>
+                        <constraint firstItem="vtY-YP-UAh" firstAttribute="centerY" secondItem="6F5-LE-eAR" secondAttribute="centerY" id="vLV-ql-8kb"/>
+                        <constraint firstItem="vtY-YP-UAh" firstAttribute="centerX" secondItem="6F5-LE-eAR" secondAttribute="centerX" id="xC9-jX-7G2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="6F5-LE-eAR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TIQ-h1-aCm"/>
+                <constraint firstItem="6F5-LE-eAR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jXU-s9-nGD"/>
+            </constraints>
+            <connections>
+                <outlet property="activityCenter" destination="vLV-ql-8kb" id="Hyx-HT-MWK"/>
+                <outlet property="messageLabel" destination="znv-VL-PnQ" id="o8N-JC-d1n"/>
+            </connections>
+        </view>
+    </objects>
+</document>
